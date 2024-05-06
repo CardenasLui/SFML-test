@@ -1,12 +1,16 @@
 #include <SFML/Graphics.hpp>
 #include "Grid.hpp"
 using namespace sf;
+
+int width = 400;
+int height = 400;
+int numCells = 100;
 int main()
 {
-    RenderWindow window(VideoMode(400, 400), "SFML works!");
+    RenderWindow window(VideoMode(width, height), "SFML works!");
     window.setFramerateLimit(60);
 
-    Grid grid(10,10);
+    Grid grid(numCells,numCells,width,height);
     while (window.isOpen())
     {
         Event event;
