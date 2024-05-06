@@ -25,6 +25,7 @@ void Grid::drawTo(RenderWindow &window){
             rect.setOutlineColor(Color::Magenta);
             rect.setOutlineThickness(1);
             rect.setPosition(Vector2f(j*40,i*40));
+            rect.setFillColor(Color(56,87,199));
             window.draw(rect);
         }
     }
