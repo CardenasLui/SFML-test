@@ -11,10 +11,12 @@ int rows, cols;
 int sizeX, sizeY;
 Vector2i size;
 vector <vector<int>> grid;
+vector<vector<int>> next;
 
 public:
     Grid(int rows, int cols, int width, int height);
 
+    void update();
     void drawTo(RenderWindow &window);
     void click(int x, int y);
     
